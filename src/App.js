@@ -6,7 +6,7 @@ import mondaySdk from "monday-sdk-js"
 
 const monday = mondaySdk()
 monday.setToken(
-  "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjE2MDg0Njc5MCwidWlkIjozMDMxOTI1MCwiaWFkIjoiMjAyMi0wNS0xN1QwMToxNzowNC4wMDBaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6NzcxNzE2NywicmduIjoidXNlMSJ9.X7R9ymORVX0CcbbBotMLdk_VjPmjfBWszsrkAvhUa3s"
+  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 )
 
 export default function App() {  
@@ -43,7 +43,7 @@ function WeathersCards({context, settings}){
         console.log(res)     
           res.data.boards[0].items.map((item) => {
             console.log(item)
-            fetch(`https://api.weatherapi.com/v1/current.json?key=c156f7f2a3d84ae0861121630223006&q=${item.column_values[0].text}&aqi=no`)
+            fetch(`https://api.weatherapi.com/v1/current.json?key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&q=${item.column_values[0].text}&aqi=no`)
             .then(result => result.json())
             .then(json => {
                 let weather = {
